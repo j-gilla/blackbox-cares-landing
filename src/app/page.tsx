@@ -1,103 +1,64 @@
-import Image from "next/image";
 
-export default function Home() {
+export default function BlackboxLandingPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="max-w-3xl mx-auto px-4 py-12 text-center space-y-12">
+      <section>
+        <h1 className="text-4xl font-bold">Blackbox</h1>
+        <p className="text-xl italic mt-2">A quiet companion for when your mind and money stop getting along.</p>
+          <button className="mt-6 text-lg px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition">Join the Waitlist</button>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <section className="text-left space-y-4">
+        <h2 className="text-2xl font-semibold">What Is Blackbox?</h2>
+        <p>Blackbox is a real-time financial monitoring system designed to help people with bipolar disorder, gambling addiction, early-stage dementia, or other cognitive and emotional challenges. It watches gently in the background — noticing when your spending behaviour slips, and offering support before things spiral.</p>
+      </section>
+
+      <section className="text-left space-y-4">
+        <h2 className="text-2xl font-semibold">Why We Exist</h2>
+        <p>After a manic episode wrecked my finances, relationships, and stability, I didn’t need a spreadsheet. I needed a lifeline. Blackbox is the thing I wish I’d had: a system that sees when you're slipping — and sends help, gently.</p>
+        <p>This is for people who live with mental health volatility, and the quiet financial fallout that so often follows.</p>
+      </section>
+
+      <section className="text-left space-y-4">
+        <h2 className="text-2xl font-semibold">How It Works</h2>
+        <ul className="list-disc list-inside">
+          <li><strong>Secure Bank Integration</strong> – via Plaid; no credentials stored</li>
+          <li><strong>Spending Pattern Analysis</strong> – personalized baselines, behavioural shifts</li>
+          <li><strong>Custom Alert Thresholds</strong> – set your own limits for peace of mind</li>
+          <li><strong>Trusted Contact Alerts</strong> – notify someone when support is needed</li>
+          <li><strong>Multi-Channel Notifications</strong> – via SMS and in-app</li>
+          <li><strong>REST API</strong> – integrates with other wellness tools and platforms</li>
+        </ul>
+      </section>
+
+      <section className="text-left space-y-4">
+        <h2 className="text-2xl font-semibold">Who It’s For</h2>
+        <ul className="list-disc list-inside">
+          <li>People with bipolar navigating manic or depressive spending</li>
+          <li>Those in gambling recovery who want preemptive support</li>
+          <li>Caregivers of people with early-stage dementia</li>
+          <li>Anyone vulnerable to impulse spending during emotional upheaval</li>
+        </ul>
+      </section>
+
+      <section className="text-left space-y-4">
+        <h2 className="text-2xl font-semibold">Our Vision</h2>
+        <p><strong>This isn’t just fintech. It’s dignity tech.</strong></p>
+        <p>Blackbox offers calm, intelligent financial tracking that works <em>with</em> your mind — not against it. We believe in agency <em>and</em> support, privacy <em>and</em> care.</p>
+        <p>We’re preparing for a pilot launch. If you’re interested in using Blackbox or partnering to test it, we’d love to hear from you.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold">Join the Waitlist</h2>
+        <p>Be the first to try Blackbox.<br />Sign up for early access. No pressure, no spam — just an invitation when we’re ready.</p>
+        <button className="mt-6 text-lg px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition">Join the Waitlist</button>
+        <p className="mt-2">Or email: <a className="underline" href="mailto:j.gilla.dev@gmail.com">j.gilla.dev@gmail.com</a></p>
+      </section>
+
+      <footer className="pt-12 text-sm text-gray-500">
+        Created by someone who’s been there. For everyone who still is.<br />
+        <a className="underline" href="https://github.com/j-gilla/blackbox" target="_blank">View Code on GitHub</a>
       </footer>
-    </div>
+    </main>
   );
 }
